@@ -7,7 +7,8 @@ buscar.addEventListener("click", () => buscarLetra(artista.value, cancion.value)
 
 async function buscarLetra(artista, cancion) {
     try {
-        const response = await fetch(`https://api.lyrics.ovh/v1/${artista}/${cancion}`);
+        const proxyUrl = 'https://cors-anywhere.herokuapp.com/'; // Proxy para evitar CORS
+        const response = await fetch(`${proxyUrl}https://api.lyrics.ovh/v1/${artista}/${cancion}`);
         const data = await response.json();
         console.log(data);
         mostrarLetra(data.lyrics);

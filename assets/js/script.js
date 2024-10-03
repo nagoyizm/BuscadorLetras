@@ -3,7 +3,7 @@ let cancion = document.getElementById("cancion");
 let buscar = document.getElementById("buscar");
 let letraDiv = document.getElementById("letra");
 
-buscar.addEventListener("click", () => buscarLetra(artista.value, cancion.value));
+buscar.addEventListener("click", () => buscarLetra(artista.value, cancion.value));  
 
 async function buscarLetra(artista, cancion) {
     try {

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-200 flex flex-col items-center">
+    <section class="mt-8 h-64 w-full bg-white text-center justify-center"> <!-- Margin top de 30px -->
+        <h1 class="pt-8 text-2xl font-bold text-red-400">Buscador de letras de canciones</h1> 
+        <div class="mt-8 justify-center flex flex-row space-x-5"> <!-- Espaciado entre elementos -->
+            <input id="artista" type="text" placeholder="Artista" class="border p-2">
+            <input id="cancion" type="text" placeholder="Canción" class="border p-2">
+            <button id="buscar" class="bg-red-400 text-white rounded-md p-2">Buscar</button>
+        </div>
+    </section>
+    <section id="letra" class="flex flex-col"></section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
